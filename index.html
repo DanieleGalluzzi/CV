@@ -17,7 +17,12 @@
             box-sizing: border-box;
         }
 
+        body {
+            font-family: sans-serif;
+        }
+
         header {
+         
             background-color: #003399;
             color: #cccccc;
         }
@@ -26,9 +31,13 @@
             justify-content: center;
             align-items: center;
             text-align: center;
+            font-weight: bold;
         }
 
-      
+        h2 {
+            font-weight: bold;
+            margin: 0 30px;
+        }
 
         .nav {
             display: block;
@@ -58,9 +67,8 @@
             margin: 15px 20px;
             padding: 30px;
             background-color: #e6eeff;
-            
             border-radius: 10px;
-            font-family: Times New Roman;
+            
         }
 
         .box {
@@ -74,8 +82,14 @@
         .biografia {
             display: flex;
             position: relative;
-            align-items: flex-start;
+            align-items: center;
             gap: 150px;
+            justify-content: center;
+            margin: 0 60px;
+        }
+
+        .biografia h2 {
+            margin: 0 ;
         }
 
         .biografia img {
@@ -104,6 +118,10 @@
             align-items: center;
             text-align: center;
             padding-top: 10px;
+        }
+
+        .descrizione {
+            padding: 0 20px;
         }
 
         /* Contatti di default: visibili su desktop, nascosti su mobile */
@@ -185,10 +203,10 @@
         <div class="biografia">
             <img src="img/icona.png" alt="Daniele Galluzzi" />
             <div>
-                <h2>Biografia</h2>
+                <h2>Biografia</h2> <br />
                 <p>
                     Elettricista con oltre 7 anni di esperienza nella distribuzione di energia elettrica a più livelli
-                    di responsabilità maturati in più realtà aziendali consorziate con il maggior ente di distribuzione in Italia.
+                    di responsabilità maturati in più <br /> realtà aziendali consorziate con il maggior ente di distribuzione in Italia.
                     Le attività svolte spaziano dall’intervento diretto a organizzazione e coordinamento delle attività su più cantieri delle squadre.
                 </p>
             </div>
@@ -208,14 +226,16 @@
                     <p>Febbraio 2023–Attuale</p>
                 </div>
 
-                <ul>
-                    <li> <strong>Profilo C:</strong> Conduzione di attività lavorative su impianti elettrici di distribuzione MT e BT (Caposquadra).</li>
-                    <li> <strong>Profilo D:</strong> Tirafili (tesatore, ammarragista e guardafili: MT e BT).</li>
-                    <li> <strong>Profilo E:</strong> Operatore esperto nell’esecuzione di giunzioni e terminazioni su cavi MT e BT.</li>
-                    <li> <strong>Profilo F:</strong> Operatore addetto al montaggio di cabine secondarie e posti di trasformazione su palo (PTP).</li>
-                    <li> <strong>Profilo G:</strong> Operatore addetto all’attività sotto tensione in BT (attività di gestione utenza svolta sui gruppi di misure prese).</li>
-                    <li> <strong>OMS:</strong> Operatore Mezzi Speciali</li>
-                </ul> <br />
+                <div class="descrizione">
+                    <ul>
+                        <li> <strong>Profilo C:</strong> Conduzione di attività lavorative su impianti elettrici di distribuzione MT e BT (Caposquadra).</li>
+                        <li> <strong>Profilo D:</strong> Tirafili (tesatore, ammarragista e guardafili: MT e BT).</li>
+                        <li> <strong>Profilo E:</strong> Operatore esperto nell’esecuzione di giunzioni e terminazioni su cavi MT e BT.</li>
+                        <li> <strong>Profilo F:</strong> Operatore addetto al montaggio di cabine secondarie e posti di trasformazione su palo (PTP).</li>
+                        <li> <strong>Profilo G:</strong> Operatore addetto all’attività sotto tensione in BT (attività di gestione utenza svolta sui gruppi di misure prese).</li>
+                        <li> <strong>OMS:</strong> Operatore Mezzi Speciali</li>
+                    </ul>
+                </div><br />
             </div>
 
             <br />
@@ -228,11 +248,12 @@
                     <p>Giugno 2022–Agosto 2022</p>
                 </div>
 
-
-                <p>
-                    Manutenzione impianti nelle centrali <a href="https://www.gruppoa2a.it/it/chi-siamo/nostri-impianti/termoelettrici/centrale-brindisi" target="_blank">A2A di Brindisi (BR)</a> e <a href="https://www.edison.it/it/la-centrale-termoelettrica-di-candela" target="_blank">Centrale Edison a Candela (FG)</a>.
-                    Attività svolta su impianti e quadri elettrici durante il periodo di fermata dell’impianto
-                </p> <br />
+                <div class="descrizione">
+                    <p>
+                        Manutenzione impianti nelle centrali <a href="https://www.gruppoa2a.it/it/chi-siamo/nostri-impianti/termoelettrici/centrale-brindisi" target="_blank">A2A di Brindisi (BR)</a> e <a href="https://www.edison.it/it/la-centrale-termoelettrica-di-candela" target="_blank">Centrale Edison a Candela (FG)</a>.
+                        Attività svolta su impianti e quadri elettrici durante il periodo di fermata dell’impianto
+                    </p>
+                </div> <br />
             </div>
 
             <br />
@@ -245,13 +266,15 @@
                     <p>Sett 2021–Aprile 2022</p>
                 </div>
 
+                <div class="descrizione">
+                    <p>
+                        Conduzione di attività lavorative su impianti elettrici di distribuzione MT e BT con ruolo di caposquadra.
+                        Installazione e manutenzione di linee elettriche MT e BT, comprese operazioni di tirafili e tensionamento.
+                        Esecuzione di giunzioni e terminazioni su cavi MT e BT. Montaggio di cabine secondarie e posti di trasformazione su palo
+                        (PTP).
+                    </p>
+                </div> <br />
 
-                <p>
-                    Conduzione di attività lavorative su impianti elettrici di distribuzione MT e BT con ruolo di caposquadra.
-                    Installazione e manutenzione di linee elettriche MT e BT, comprese operazioni di tirafili e tensionamento.
-                    Esecuzione di giunzioni e terminazioni su cavi MT e BT. Montaggio di cabine secondarie e posti di trasformazione su palo
-                    (PTP).
-                </p> <br />
             </div>
 
             <br />
@@ -264,14 +287,16 @@
                     <p>Settembre 2018 - Settembre 2021</p>
                 </div>
 
-                <ul>
-                    <li> <strong>Profilo C:</strong> Conduzione di attività lavorative su impianti elettrici di distribuzione MT e BT (Caposquadra).</li>
-                    <li> <strong>Profilo D:</strong> Tirafili (tesatore, ammarragista e guardafili: MT e BT).</li>
-                    <li> <strong>Profilo E:</strong> Operatore esperto nell’esecuzione di giunzioni e terminazioni su cavi MT e BT.</li>
-                    <li> <strong>Profilo F:</strong> Operatore addetto al montaggio di cabine secondarie e posti di trasformazione su palo (PTP).</li>
-                    <li> <strong>Profilo G:</strong> Operatore addetto all’attività sotto tensione in BT (attività di gestione utenza svolta sui gruppi di misure prese).</li>
-                    <li> <strong>OMS:</strong> Operatore Mezzi Speciali</li>
-                </ul> <br />
+                <div class="descrizione">
+                    <ul>
+                        <li> <strong>Profilo C:</strong> Conduzione di attività lavorative su impianti elettrici di distribuzione MT e BT (Caposquadra).</li>
+                        <li> <strong>Profilo D:</strong> Tirafili (tesatore, ammarragista e guardafili: MT e BT).</li>
+                        <li> <strong>Profilo E:</strong> Operatore esperto nell’esecuzione di giunzioni e terminazioni su cavi MT e BT.</li>
+                        <li> <strong>Profilo F:</strong> Operatore addetto al montaggio di cabine secondarie e posti di trasformazione su palo (PTP).</li>
+                        <li> <strong>Profilo G:</strong> Operatore addetto all’attività sotto tensione in BT (attività di gestione utenza svolta sui gruppi di misure prese).</li>
+                        <li> <strong>OMS:</strong> Operatore Mezzi Speciali</li>
+                    </ul>
+                </div> <br />
             </div>
 
             <br />
@@ -284,16 +309,18 @@
                     <p>Gennaio 2018 - Luglio 2018</p>
                 </div>
 
-                <p>
-                    Posa cavi, assemblaggio e montaggio di corpi illuminanti, cablaggio quadri elettrici e cassette di derivazione,
-                    realizzazione tubazioni zincate e in PVC, montaggio e cablaggio di pulsanti, interruttori, deviatori e invertitori
-                    presso cantiere ITINERA, Civitavecchia (RM) per  la realizzazione del  <a href="https://www.granitifiandre.it/insights/terminal-amerigo-vespucci-civitavecchia">Terminal Amerigo Vespucci</a>
-                </p>
+                <div class="descrizione">
+                    <p>
+                        Posa cavi, assemblaggio e montaggio di corpi illuminanti, cablaggio quadri elettrici e cassette di derivazione,
+                        realizzazione tubazioni zincate e in PVC, montaggio e cablaggio di pulsanti, interruttori, deviatori e invertitori
+                        presso cantiere ITINERA, Civitavecchia (RM) per  la realizzazione del  <a href="https://www.granitifiandre.it/insights/terminal-amerigo-vespucci-civitavecchia">Terminal Amerigo Vespucci</a>
+                    </p>
+                </div>
             </div>
 
             <hr />
 
-            <h2>Istruzione e Formazione</h2>
+            <h2>Istruzione e Formazione</h2> <br />
             <div class="box">
                 <br />
                 <p>
