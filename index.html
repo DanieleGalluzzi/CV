@@ -1,0 +1,313 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    <meta charset="utf-8" />
+    <title>CV - Daniele Galluzzi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #003399;
+            color: #cccccc;
+        }
+
+        h1 {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+      
+
+        .nav {
+            display: block;
+            justify-content: center;
+            align-items: center
+        }
+
+        .contatti ul {
+            display: flex;
+            list-style: none;
+            gap: 50px;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 20px;
+        }
+
+        .contatti a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .contatti a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            margin: 15px 20px;
+            padding: 30px;
+            background-color: #e6eeff;
+            
+            border-radius: 10px;
+            font-family: Times New Roman;
+        }
+
+        .box {
+            background-color: #ccddff;
+            border-radius: 10px;
+            border: 1px solid black;
+            margin: 0 60px;
+            padding: 10px 15px 0;
+        }
+
+        .biografia {
+            display: flex;
+            position: relative;
+            align-items: flex-start;
+            gap: 150px;
+        }
+
+        .biografia img {
+            width: 10%;
+            height: auto;
+            border-radius: 50px;
+        }
+
+        hr {
+            padding: 0 35px;           
+        }
+
+        .mansione {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .mansione strong {
+            font-size: 20px;
+        }
+
+        footer {
+            background-color: #003399;
+            color: #cccccc;          
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding-top: 10px;
+        }
+
+        /* Contatti di default: visibili su desktop, nascosti su mobile */
+        #contattiMenu {
+            display: flex;
+        }
+
+        @media (max-width: 768px) {
+            #contattiMenu {
+                display: none;
+                flex-direction: column;
+            }
+
+                #contattiMenu.show {
+                    display: flex;
+                }
+
+            .contatti ul {
+                flex-direction: column;
+                gap: 10px;
+                padding: 10px 0;
+            }
+        }
+    </style>
+
+
+
+
+</head>
+
+<body>
+    <header class="py-3">
+        <div class="container text-center">
+            <!-- Titolo sempre centrato -->
+            <h1 class="m-0">Daniele Galluzzi</h1>
+
+            <!-- Burger visibile solo su mobile -->
+            <button class="btn btn-light d-md-none mt-2" id="burgerBtn" aria-label="Menu">
+                <i class="bi bi-list" style="font-size: 1.8rem;"></i>
+            </button>
+
+            <!-- Menu contatti: visibile sempre su desktop, a scomparsa su mobile -->
+            <div class="contatti mt-3 d-md-flex flex-wrap justify-content-center align-items-center" id="contattiMenu">
+                <ul>
+                    <li> <i class="bi bi-house"></i> Palagiano(TA), 74019</li>
+                    <li> <i class="bi bi-envelope-at"></i> <a href="mailto:galluzzi240@gmail.com">galluzzi240@gmail.com</a> </li>
+                    <li> <i class="bi bi-envelope-at"></i> <a href="mailto:galluzzi240@pec.it">galluzzi240@pec.it</a> </li>
+                    <li> <i class="bi bi-telephone"></i> +39 3483429848</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+
+        <div class="biografia">
+            <img src="img/icona.png" alt="Daniele Galluzzi" />
+            <div>
+                <h2>Biografia</h2>
+                <p>
+                    Elettricista con oltre 7 anni di esperienza nella distribuzione di energia elettrica a più livelli
+                    di responsabilità maturati in più realtà aziendali consorziate con il maggior ente di distribuzione in Italia.
+                    Le attività svolte spaziano dall’intervento diretto a organizzazione e coordinamento delle attività su più cantieri delle squadre.
+                </p>
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="esperienze">
+            <h2>Esperienza</h2>
+            <br />
+
+            <div class="box">
+                <div class="mansione">
+                    <p>
+                        <strong>Elettricista</strong> T & D SrL, Costruzioni impianti elettrici, Mottola (TA), Italy
+                    </p>
+                    <p>Febbraio 2023–Attuale</p>
+                </div>
+
+                <ul>
+                    <li> <strong>Profilo C:</strong> Conduzione di attività lavorative su impianti elettrici di distribuzione MT e BT (Caposquadra).</li>
+                    <li> <strong>Profilo D:</strong> Tirafili (tesatore, ammarragista e guardafili: MT e BT).</li>
+                    <li> <strong>Profilo E:</strong> Operatore esperto nell’esecuzione di giunzioni e terminazioni su cavi MT e BT.</li>
+                    <li> <strong>Profilo F:</strong> Operatore addetto al montaggio di cabine secondarie e posti di trasformazione su palo (PTP).</li>
+                    <li> <strong>Profilo G:</strong> Operatore addetto all’attività sotto tensione in BT (attività di gestione utenza svolta sui gruppi di misure prese).</li>
+                    <li> <strong>OMS:</strong> Operatore Mezzi Speciali</li>
+                </ul> <br />
+            </div>
+
+            <br />
+
+            <div class="box">
+                <div class="mansione">
+                    <p>
+                        <strong>Elettricista</strong> COMES SpA, Taranto (TA), Italy
+                    </p>
+                    <p>Giugno 2022–Agosto 2022</p>
+                </div>
+
+
+                <p>
+                    Manutenzione impianti nelle centrali <a href="https://www.gruppoa2a.it/it/chi-siamo/nostri-impianti/termoelettrici/centrale-brindisi" target="_blank">A2A di Brindisi (BR)</a> e <a href="https://www.edison.it/it/la-centrale-termoelettrica-di-candela" target="_blank">Centrale Edison a Candela (FG)</a>.
+                    Attività svolta su impianti e quadri elettrici durante il periodo di fermata dell’impianto
+                </p> <br />
+            </div>
+
+            <br />
+
+            <div class="box">
+                <div class="mansione">
+                    <p>
+                        <strong> Elettricista</strong> Sirti Energia SpA, Frossasco (TO), Italy
+                    </p>
+                    <p>Sett 2021–Aprile 2022</p>
+                </div>
+
+
+                <p>
+                    Conduzione di attività lavorative su impianti elettrici di distribuzione MT e BT con ruolo di caposquadra.
+                    Installazione e manutenzione di linee elettriche MT e BT, comprese operazioni di tirafili e tensionamento.
+                    Esecuzione di giunzioni e terminazioni su cavi MT e BT. Montaggio di cabine secondarie e posti di trasformazione su palo
+                    (PTP).
+                </p> <br />
+            </div>
+
+            <br />
+
+            <div class="box">
+                <div class="mansione">
+                    <p>
+                        <strong>Elettricista,</strong> T & D SrL, Costruzioni impianti elettrici, Mottola (TA), Italy
+                    </p>
+                    <p>Settembre 2018 - Settembre 2021</p>
+                </div>
+
+                <ul>
+                    <li> <strong>Profilo C:</strong> Conduzione di attività lavorative su impianti elettrici di distribuzione MT e BT (Caposquadra).</li>
+                    <li> <strong>Profilo D:</strong> Tirafili (tesatore, ammarragista e guardafili: MT e BT).</li>
+                    <li> <strong>Profilo E:</strong> Operatore esperto nell’esecuzione di giunzioni e terminazioni su cavi MT e BT.</li>
+                    <li> <strong>Profilo F:</strong> Operatore addetto al montaggio di cabine secondarie e posti di trasformazione su palo (PTP).</li>
+                    <li> <strong>Profilo G:</strong> Operatore addetto all’attività sotto tensione in BT (attività di gestione utenza svolta sui gruppi di misure prese).</li>
+                    <li> <strong>OMS:</strong> Operatore Mezzi Speciali</li>
+                </ul> <br />
+            </div>
+
+            <br />
+
+            <div class="box">
+                <div class="mansione">
+                    <p>
+                        <strong>Elettricista,</strong> N & G SrL, Impianti elettrici e Tecnologici, Massafra (TA), Italy
+                    </p>
+                    <p>Gennaio 2018 - Luglio 2018</p>
+                </div>
+
+                <p>
+                    Posa cavi, assemblaggio e montaggio di corpi illuminanti, cablaggio quadri elettrici e cassette di derivazione,
+                    realizzazione tubazioni zincate e in PVC, montaggio e cablaggio di pulsanti, interruttori, deviatori e invertitori
+                    presso cantiere ITINERA, Civitavecchia (RM) per  la realizzazione del  <a href="https://www.granitifiandre.it/insights/terminal-amerigo-vespucci-civitavecchia">Terminal Amerigo Vespucci</a>
+                </p>
+            </div>
+
+            <hr />
+
+            <h2>Istruzione e Formazione</h2>
+            <div class="box">
+                <br />
+                <p>
+                    <strong>Diploma di istruzione secondaria superiore in Elettronica-Elettrotecnica articolazione Automazione</strong> <br />
+                    <a href="https://www.pacinottitaranto.edu.it/"> ISTITUTO TECNICO TECNOLOGICO "A. Pacinotti" TARANTO - TA </a>
+                </p>
+                <h4>Esperienza formativa estera</h4>
+                <p>Earth Core n° 2016, Atene, Grecia</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="contatti">
+            <ul>
+                <li> <i class="bi bi-house"></i> Palagiano(TA), 74019</li>
+                <li> <i class="bi bi-envelope-at"></i> <a href="mailto:galluzzi240@gmail.com">galluzzi240@gmail.com</a> </li>
+                <li> <i class="bi bi-envelope-at"></i> <a href="mailto:galluzzi240@pec.it">galluzzi240@pec.it</a> </li>
+                <li> <i class="bi bi-telephone"></i> +39 3483429848</li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const burgerBtn = document.getElementById('burgerBtn');
+            const contattiMenu = document.getElementById('contattiMenu');
+
+            burgerBtn.addEventListener('click', function () {
+                contattiMenu.classList.toggle('show');
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
+
