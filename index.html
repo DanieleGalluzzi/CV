@@ -34,10 +34,16 @@
             font-weight: bold;
         }
 
-        h2 {
-            font-weight: bold;
+        h2 {           
             margin: 0 30px;
         }
+
+        .h2 {
+            font-weight: bold;
+            font-size: 35px;
+        }
+
+        
 
         .nav {
             display: block;
@@ -124,6 +130,12 @@
             padding: 0 20px;
         }
 
+        .informatica {
+            display:flex;
+        }
+
+     
+
         /* Contatti di default: visibili su desktop, nascosti su mobile */
         #contattiMenu {
             display: flex;
@@ -203,7 +215,7 @@
         <div class="biografia">
             <img src="img/icona.png" alt="Daniele Galluzzi" />
             <div>
-                <h2>Biografia</h2> <br />
+                <h2> <span class="h2">Bio</span>grafia</h2> <br />
                 <p>
                     Elettricista con oltre 7 anni di esperienza nella distribuzione di energia elettrica a più livelli
                     di responsabilità maturati in più <br /> realtà aziendali consorziate con il maggior ente di distribuzione in Italia.
@@ -215,7 +227,7 @@
         <hr />
 
         <div class="esperienze">
-            <h2>Esperienza</h2>
+            <h2> <span class="h2">Esp</span>erienza</h2>
             <br />
 
             <div class="box">
@@ -320,7 +332,7 @@
 
             <hr />
 
-            <h2>Istruzione e Formazione</h2> <br />
+            <h2> <span class="h2">Ist</span>ruzione e Formazione</h2> <br />
             <div class="box">
                 <br />
                 <p>
@@ -330,7 +342,37 @@
                 <h4>Esperienza formativa estera</h4>
                 <p>Earth Core n° 2016, Atene, Grecia</p>
             </div>
+
+            <hr />
+
+            <h2> <span class="h2">Com</span>petenze Informatiche</h2>
+            <div class="box">
+                <br /> 
+
+                <div class="informatica">
+                    <ul>
+                        <li>Padronanza del Pacchetto Office (Word, Excel, PowerPoint ecc.)</li>
+                        <li>Posta elettronica</li>
+                        <li>Internet</li>
+                    </ul>
+                    
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS</li>
+                        <li>Bootstrap</li>
+                        <li>Javascript</li>
+                    </ul>
+
+                    <ul>
+                        <li>Github desktop</li>
+                        <li>Visual Studio</li>
+                        <li>Eclipse</li>
+                    </ul>
+                </div>
+
+            </div>
         </div>
+
     </main>
 
     <footer>
